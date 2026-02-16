@@ -3,3 +3,4 @@ mlx-lm
 numpy
 tqdm
 huggingface-hub
+python-dotenv

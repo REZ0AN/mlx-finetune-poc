@@ -1,1 +1,6 @@
 mlx-poc
+.env
+adapters
+.DS_Store
+__pycache__
+.vscode

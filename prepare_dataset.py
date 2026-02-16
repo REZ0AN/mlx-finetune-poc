@@ -24,11 +24,10 @@ def format_data(data, num_examples=NUM_EXAMPLES):
         input_text = item.get('input', '')
         output = item['output']
     
-        # Create instruction-response format
         if input_text:
-            text = f"### Instruction:\n{instruction}\n\n### Input:\n{input_text}\n\n### Response:\n{output}"
+            text = f"<|user|>\n{instruction}\n{input_text}<|end|>\n<|assistant|>\n{output}<|end|>"
         else:
-            text = f"### Instruction:\n{instruction}\n\n### Response:\n{output}"
+            text = f"<|user|>\n{instruction}<|end|>\n<|assistant|>\n{output}<|end|>"
         
         formatted_data.append({"text": text})
     return formatted_data
