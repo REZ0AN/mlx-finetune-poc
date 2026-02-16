@@ -190,7 +190,7 @@ python testing_model.py
   - Add graceful shutdown handlers
   - Monitor and alert on resource limits
 
-## 📝 Example Usage
+## Example Usage
 
 ## Train the model
 ```bash
@@ -219,7 +219,7 @@ python testing_model.py
 # > [Streaming response from model]
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 See `requirements.txt` for full list. Key packages:
 - `mlx >= 0.30.6`
@@ -227,7 +227,7 @@ See `requirements.txt` for full list. Key packages:
 - `huggingface_hub >= 1.4.0`
 - `python-dotenv >= 1.0.0`
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file if needed for API keys or custom paths:
 
@@ -237,7 +237,7 @@ HF_TOKEN=your_huggingface_token
 ADAPTER_PATH=./adapters
 ```
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 1. **RAM Constraint**: Limited to 8GB devices; batch size locked at 1
 2. **Sequence Length**: Capped at 512 tokens due to inference limitations
@@ -245,18 +245,7 @@ ADAPTER_PATH=./adapters
 4. **Quantization**: Uses fixed 4-bit quantization; no flexible options
 5. **Single-GPU**: No multi-device training support
 
-## 🎓 Future Enhancements
-
-- [ ] Support for larger models (7B, 13B with better quantization)
-- [ ] Distributed training for multi-device setups
-- [ ] Advanced sampling strategies (beam search, top-k, nucleus)
-- [ ] Fine-tuning evaluation metrics (perplexity, accuracy)
-- [ ] Model quantization pipeline
-- [ ] API deployment with FastAPI
-- [ ] Monitoring dashboard with live metrics
-- [ ] Integration with cloud platforms (Azure ML, SageMaker)
-
-## 📚 References
+## References
 
 - [Medium Blog](https://medium.com/@dummahajan/train-your-own-llm-on-macbook-a-15-minute-guide-with-mlx-6c6ed9ad036a)
 
